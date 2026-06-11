@@ -1,0 +1,55 @@
+env: load .env
+env: export EXPO_PUBLIC_GROQ_KEY EXPO_PUBLIC_SUPABASE_ANON_KEY EXPO_PUBLIC_SUPABASE_URL
+Starting Metro Bundler
+
+Android Bundling failed 778ms node_modules\expo-router\entry.js (1454 modules)
+Error: Unable to resolve module react-native-worklets from C:\Users\arunb\aurora\node_modules\react-native-reanimated\src\initializers.ts: react-native-worklets could not be found within the project or in these directories:
+  node_modules
+  ..\node_modules
+[0m [90m 1 |[39m [32m'use strict'[39m[33m;[39m
+[31m[1m>[22m[39m[90m 2 |[39m [36mimport[39m { runOnUISync } [36mfrom[39m [32m'react-native-worklets'[39m[33m;[39m
+ [90m   |[39m                              [31m[1m^[22m[39m
+ [90m 3 |[39m
+ [90m 4 |[39m [36mimport[39m { [33mIS_WEB[39m[33m,[39m [33mReanimatedError[39m[33m,[39m [33mSHOULD_BE_USE_WEB[39m } [36mfrom[39m [32m'./common'[39m[33m;[39m
+ [90m 5 |[39m [36mimport[39m { initSvgCssSupport } [36mfrom[39m [32m'./css/svg'[39m[33m;[39m[0m
+
+Import stack:
+
+ node_modules\react-native-reanimated\src\initializers.ts
+ | import "react-native-worklets"
+
+ node_modules\react-native-reanimated\src\index.ts
+ | import "./initializers"
+
+ node_modules\@expo\ui\src\State\index.fx.ts
+ | import "react-native-reanimated"
+
+ node_modules\@expo\ui\src\State\index.ts
+ | import "./index.fx"
+
+ node_modules\@expo\ui\src\jetpack-compose\index.ts
+ | import "../State"
+
+ node_modules\expo-router\build\layouts\stack-utils\toolbar\StackToolbarButton\native.android.js
+ | import "@expo/ui/jetpack-compose"
+
+ node_modules\expo-router\build\layouts\stack-utils\toolbar\StackToolbarButton\index.js
+ | import "./native"
+
+ node_modules\expo-router\build\layouts\stack-utils\toolbar\StackToolbar.js
+ | import "./StackToolbarButton"
+
+ node_modules\expo-router\build\layouts\Stack.js
+ | import "./stack-utils/toolbar/StackToolbar"
+
+ node_modules\expo-router\build\stack\index.js
+ | import "../layouts/Stack"
+
+ node_modules\expo-router\build\index.js
+ | import "./stack"
+
+ app\(onboarding)\goals.tsx
+ | import "expo-router"
+
+ app (require.context)
+
