@@ -7,11 +7,6 @@
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "dark",
-    "newArchEnabled": false,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "backgroundColor": "#0A0A0F"
-    },
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.arunbamal.aurora"
@@ -41,7 +36,15 @@
         {
           "microphonePermission": "Allow Aurora to access your microphone for voice commands."
         }
-      ]
-    ]
+      ],
+      "expo-asset",
+      "expo-font"
+    ],
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "6cb55bbf-d3ca-44c7-a736-2a18940f19a9"
+      }
+    }
   }
 }
