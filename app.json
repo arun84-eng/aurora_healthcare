@@ -27,10 +27,7 @@
       "permissions": [
         "android.permission.RECORD_AUDIO",
         "android.permission.INTERNET",
-        "android.permission.ACCESS_NETWORK_STATE",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.FOREGROUND_SERVICE",
-        "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK"
+        "android.permission.ACCESS_NETWORK_STATE"
       ]
     },
     "web": {
@@ -38,19 +35,13 @@
     },
     "plugins": [
       "expo-router",
+      "expo-web-browser",
       [
         "expo-audio",
         {
           "microphonePermission": "Allow Aurora to access your microphone for voice commands."
         }
-      ],
-      "expo-web-browser"
-    ],
-    "extra": {
-      "router": {},
-      "eas": {
-        "projectId": "6cb55bbf-d3ca-44c7-a736-2a18940f19a9"
-      }
-    }
+      ]
+    ]
   }
 }
