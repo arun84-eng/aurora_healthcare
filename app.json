@@ -2,6 +2,7 @@
   "expo": {
     "name": "aurora",
     "slug": "aurora",
+    "scheme": "aurora",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,10 +16,16 @@
         "foregroundImage": "./assets/android-icon-foreground.png",
         "backgroundImage": "./assets/android-icon-background.png",
         "monochromeImage": "./assets/android-icon-monochrome.png"
-      }
+      },
+      "package": "com.arunbamal.aurora"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "6cb55bbf-d3ca-44c7-a736-2a18940f19a9"
+      }
     }
   }
 }
