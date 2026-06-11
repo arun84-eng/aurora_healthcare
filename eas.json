@@ -6,9 +6,9 @@
   "build": {
     "preview": {
       "android": {
-        "buildType": "apk"
-      },
-      "environment": "preview"
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease --stacktrace"
+      }
     }
   },
   "submit": {
