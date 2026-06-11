@@ -43,7 +43,8 @@
         {
           "microphonePermission": "Allow Aurora to access your microphone for voice commands."
         }
-      ]
+      ],
+      "expo-web-browser"
     ],
     "extra": {
       "router": {},
