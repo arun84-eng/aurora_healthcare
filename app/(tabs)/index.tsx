@@ -150,6 +150,28 @@ function HabitsCard() {
     </TouchableOpacity>
   );
 }
+function NutritionCard() {
+  const router = useRouter();
+  return (
+    <TouchableOpacity
+      style={[styles.card, { marginTop: 14 }]}
+      onPress={() => router.push('/(tabs)/nutrition')}
+      activeOpacity={0.8}
+    >
+      <View style={styles.cardHeader}>
+        <View style={[styles.cardIcon, { backgroundColor: `${theme.colors.gold}22` }]}>
+          <Ionicons name="restaurant-outline" size={18} color={theme.colors.gold} />
+        </View>
+        <Text style={styles.cardTitle}>Nutrition</Text>
+        <Ionicons name="chevron-forward" size={16} color={theme.colors.textMuted} />
+      </View>
+      <Text style={[styles.cardBigNumber, { fontSize: 22, color: theme.colors.textMuted }]}>
+        Track meals
+      </Text>
+      <Text style={styles.cardSub}>breakfast · lunch · dinner · snacks</Text>
+    </TouchableOpacity>
+  );
+}
 
 function AuroraCompanionBanner() {
   const router = useRouter();
@@ -252,6 +274,7 @@ export default function HomeScreen() {
         <SleepCard />
       </View>
       <HabitsCard />
+      <NutritionCard />
 
       {/* Streak row */}
       <View style={styles.streakRow}>

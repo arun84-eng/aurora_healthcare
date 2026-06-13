@@ -4,7 +4,7 @@ import { StatusBar } from 'expo-status-bar';
 import { View, ActivityIndicator } from 'react-native';
 import { supabase } from '../lib/supabase';
 import { useStore } from '../lib/store';
-import { ErrorBoundary } from 'expo-router';
+
 
 export default function RootLayout() {
   const { setUserId, setProfile } = useStore();
